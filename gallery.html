@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="43200">
+<title>معرض الصور | Gallery</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body dir="rtl" lang="ar">
+<div class="topbar">
+  <div class="left">
+    <a href="mailto:info@alula-vision.sa">✉ info@alula-vision.sa</a>
+    <a href="tel:+966112589999">☏ +966 11 258 9999</a>
+  </div>
+  <button class="lang-toggle" id="langBtn" onclick="toggleLang()">English</button>
+</div>
+
+<header class="site-header">
+  <div class="brand">
+    <div class="logos">
+      <img src="images/logo/imsiu-logo.png" alt="جامعة الإمام محمد بن سعود الإسلامية - IMSIU">
+      <img src="images/logo/ccis-logo.png" alt="كلية علوم الحاسب والمعلومات - CCIS">
+    </div>
+    <span class="brand-text">
+      <span class="lang-ar" style="font-family:var(--serif-ar)">العُلا</span>
+      <span class="lang-en">AlUla</span>
+      <small><span class="lang-ar">رؤية ٢٠٣٠</span><span class="lang-en">VISION 2030</span></small>
+    </span>
+  </div>
+  <div class="brand alula-logo">
+    <img src="images/logo/rcu-logo.png" alt="الهيئة الملكية لمحافظة العُلا - Royal Commission for AlUla">
+    <img src="images/logo/alula-logo.png" alt="العُلا - AlUla">
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul>
+    <li><a href="index.html"><span class="lang-ar">الرئيسية</span><span class="lang-en">Home</span></a></li>
+    <li><a href="about.html"><span class="lang-ar">من نحن</span><span class="lang-en">About</span></a></li>
+    <li>
+      <a href="tourism.html"><span class="lang-ar">اكتشف العُلا ▾</span><span class="lang-en">Discover ▾</span></a>
+      <ul class="dropdown">
+        <li><a href="tourism.html#hegra"><span class="lang-ar">الحِجر (مدائن صالح)</span><span class="lang-en">Hegra</span></a></li>
+        <li><a href="tourism.html#farid"><span class="lang-ar">قصر الفريد</span><span class="lang-en">Qasr Al-Farid</span></a></li>
+        <li><a href="tourism.html#oldtown"><span class="lang-ar">البلدة القديمة</span><span class="lang-en">Old Town</span></a></li>
+        <li><a href="tourism.html#nature"><span class="lang-ar">الطبيعة والحياة البرية</span><span class="lang-en">Nature & Wildlife</span></a></li>
+        <li><a href="tourism.html#adventure"><span class="lang-ar">المغامرات</span><span class="lang-en">Adventure</span></a></li>
+      </ul>
+    </li>
+    <li><a href="gallery.html" class="active"><span class="lang-ar">معرض الصور</span><span class="lang-en">Gallery</span></a></li>
+    <li><a href="booking.php"><span class="lang-ar">احجز جولة</span><span class="lang-en">Book a Tour</span></a></li>
+    <li><a href="feedback.php"><span class="lang-ar">آراء الزوار</span><span class="lang-en">Feedback</span></a></li>
+    <li><a href="chatbot.html"><span class="lang-ar">المساعد الذكي</span><span class="lang-en">AI Assistant</span></a></li>
+    <li><a href="register.php"><span class="lang-ar">حساب جديد</span><span class="lang-en">Register</span></a></li>
+    <li><a href="login.php"><span class="lang-ar">دخول</span><span class="lang-en">Sign In</span></a></li>
+  </ul>
+</nav>
+
+<section class="hero" style="height:42vh;min-height:340px">
+  <div class="hero-bg" style="background-image:url('images/gallery/canyon-pool.jpg')"></div>
+  <div class="hero-content">
+    <p class="eyebrow"><span class="lang-ar">رحلة بصرية</span><span class="lang-en">A Visual Journey</span></p>
+    <h1><span class="lang-ar">معرض الصور</span><span class="lang-en">Gallery</span></h1>
+  </div>
+</section>
+<section class="section">
+  <div class="section-narrow">
+    <div class="section-head reveal">
+      <p class="eyebrow"><span class="lang-ar">لقطات من العُلا</span><span class="lang-en">Moments from AlUla</span></p>
+      <h2><span class="lang-ar">الصور</span><span class="lang-en">Photos</span></h2>
+      <div class="divider-line"></div>
+      <p><span class="lang-ar">اضغط على أي صورة لعرضها بالحجم الكامل.</span><span class="lang-en">Click any photo to view it full size.</span></p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item reveal" onclick="openLightbox('images/gallery/al-farid.jpg')"><img src="images/gallery/al-farid.jpg" alt="Qasr Al-Farid"></div>
+      <div class="g-item reveal" onclick="openLightbox('images/gallery/hegra-tourists.jpg')"><img src="images/gallery/hegra-tourists.jpg" alt="Hegra Visitors"></div>
+      <div class="g-item reveal" onclick="openLightbox('images/gallery/canyon-pool.jpg')"><img src="images/gallery/canyon-pool.jpg" alt="Canyon Pool"></div>
+      <div class="g-item reveal" onclick="openLightbox('images/gallery/desert-tent.jpg')"><img src="images/gallery/desert-tent.jpg" alt="Desert Resort"></div>
+      <div class="g-item reveal" onclick="openLightbox('images/gallery/resort-night.jpg')"><img src="images/gallery/resort-night.jpg" alt="Resort at Night"></div>
+      <div class="g-item reveal" onclick="openLightbox('images/gallery/clay-pool.jpg')"><img src="images/gallery/clay-pool.jpg" alt="Clay Gate"></div>
+      <div class="g-item reveal" onclick="openLightbox('images/places/wildlife.jpg')"><img src="images/places/wildlife.jpg" alt="Wildlife"></div>
+      <div class="g-item reveal" onclick="openLightbox('images/places/skydiving.jpg')"><img src="images/places/skydiving.jpg" alt="Skydiving"></div>
+      <div class="g-item reveal" onclick="openLightbox('images/places/marathon.jpg')"><img src="images/places/marathon.jpg" alt="AlUla Marathon"></div>
+    </div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="section-narrow">
+    <div class="section-head reveal">
+      <h2><span class="lang-ar">فيديوهات</span><span class="lang-en">Videos</span></h2>
+      <div class="divider-line"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px">
+      <video controls poster="images/places/al-farid.jpg" style="width:100%;box-shadow:var(--shadow-1)">
+        <source src="videos/alula-vid.mp4" type="video/mp4">
+      </video>
+      <video controls poster="images/places/canyon-pool.jpg" style="width:100%;box-shadow:var(--shadow-1)">
+        <source src="videos/alula-vid.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p style="text-align:center;margin-top:20px;color:var(--ink-soft);font-size:.9rem">
+      <span class="lang-ar">ملاحظة: أضف ملفات الفيديو في مجلد videos لتظهر هنا.</span>
+      <span class="lang-en">Note: add video files to the videos folder to display here.</span>
+    </p>
+  </div>
+</section>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4><span class="lang-ar">العُلا رؤية ٢٠٣٠</span><span class="lang-en">AlUla Vision 2030</span></h4>
+      <p><span class="lang-ar">منصة سياحية تعليمية تبرز جمال العُلا وتدعم أهداف رؤية المملكة ٢٠٣٠ في السياحة والثقافة والتحول الرقمي.</span><span class="lang-en">An educational tourism platform showcasing AlUla and supporting Vision 2030 goals in tourism, culture, and digital transformation.</span></p>
+    </div>
+    <div>
+      <h4><span class="lang-ar">روابط</span><span class="lang-en">Links</span></h4>
+      <a href="tourism.html"><span class="lang-ar">اكتشف العُلا</span><span class="lang-en">Discover</span></a>
+      <a href="booking.php"><span class="lang-ar">احجز جولة</span><span class="lang-en">Book a Tour</span></a>
+      <a href="feedback.php"><span class="lang-ar">آراء الزوار</span><span class="lang-en">Feedback</span></a>
+    </div>
+    <div>
+      <h4><span class="lang-ar">تواصل</span><span class="lang-en">Contact</span></h4>
+      <a href="mailto:info@alula-vision.sa">info@alula-vision.sa</a>
+      <a href="tel:+966112589999">+966 11 258 9999</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="lang-ar">© الفصل الثاني ٢٠٢٦-٢٧ / جامعة الإمام / كلية علوم الحاسب — مشروع مقرر IS337</span>
+    <span class="lang-en">© 2nd 2026-27 / IMSIU / CCIS — IS337 Group Project</span>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+</body>
+</html>
